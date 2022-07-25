@@ -496,7 +496,7 @@ const badData = ["江宁区"];
 
 
 export function setMap(region) {
-  console.log(region)
+  // console.log(region)
 
   if (badData.includes(region.name)) {
     return;

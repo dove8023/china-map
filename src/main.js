@@ -16,3 +16,8 @@ let app = new Vue({
 
 app.$mount("#app")
 
+
+const context = require.context("./utils", false, /\.js$/)
+console.log('context: ', context);
+console.log('hello: ', context.keys());
+console.log(context('./index.js').toString());
